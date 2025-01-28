@@ -1,46 +1,85 @@
-/* styles.css */
-
-/* Body Styling */
-body {
-    font-family: Arial, sans-serif;
+/* Global reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and overall background */
+body {
     background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-/* Header Styling */
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
-}
-
-h1 {
-    margin: 0;
-    font-size: 36px;
-}
-
-p {
-    font-size: 20px;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
+/* Center content */
+.container {
+    max-width: 1000px;
     width: 100%;
+    text-align: center;
 }
 
-a {
-    color: #4CAF50;
-    text-decoration: none;
+/* Header styling */
+header {
+    background-color: #1d3557;
+    color: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-a:hover {
-    text-decoration: underline;
+/* Profile image */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the image */
+.profile-image:hover {
+    transform: scale(1.1);
+}
+
+/* Header title */
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+/* Header paragraph */
+p {
+    font-size: 1.1rem;
+    color: #f1faee;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1d3557;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
 }
