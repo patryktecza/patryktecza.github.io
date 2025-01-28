@@ -8,21 +8,18 @@
 </head>
 <body>
 
-    <!-- Header with your picture and description -->
+    <!-- Header with your name and introduction -->
     <header class="header">
         <div class="container">
-            <div class="profile">
-                <img src="zdjecie-moje.png" alt="Patryk Tecza" class="profile-image">
-                <h1 class="name">Patryk Tecza</h1>
-                <p class="bio">Hi, I'm Patryk. I specialize in web development using Python and Django. Below are some of my projects!</p>
-            </div>
+            <h1 class="name">Patryk Tecza</h1>
+            <p class="greeting">Good evening, I'm Patryk Tecza, and these are my projects.</p>
         </div>
     </header>
 
     <!-- Projects Section -->
     <section class="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">My Projects</h2>
             
             <div class="project-cards">
                 <!-- Project 1 -->
@@ -32,7 +29,7 @@
                         <p><strong>Technologies:</strong> Python, Django, PostgreSQL, HTML, CSS, JavaScript</p>
                     </div>
                     <p class="project-description">A web app to manage your tasks and to-dos. Built with Django and PostgreSQL, this app helps you stay organized and focused.</p>
-                    <a href="#todo" class="view-project">View Project</a>
+                    <button class="view-project" onclick="window.open('https://example.com', '_blank')">View Project</button>
                 </div>
 
                 <!-- Project 2 -->
@@ -42,7 +39,7 @@
                         <p><strong>Technologies:</strong> Python, Django, PostgreSQL, Bootstrap, Celery</p>
                     </div>
                     <p class="project-description">This system helps businesses track employee hours and performance. Built with Django and PostgreSQL, it includes task management features.</p>
-                    <a href="#employee-tracking" class="view-project">View Project</a>
+                    <button class="view-project" onclick="window.open('https://example.com', '_blank')">View Project</button>
                 </div>
 
                 <!-- Placeholder for more projects -->
