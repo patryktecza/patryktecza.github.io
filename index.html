@@ -10,36 +10,52 @@
 
     <!-- Header with your picture and description -->
     <header class="header">
-        <div class="profile">
-            <img src="zdjecie-moje.png" alt="Patryk Tecza" class="profile-image">
-            <p class="bio">Hi, I'm Patryk Tecza. I'm a web developer specializing in Python and Django. Below are some of my projects!</p>
+        <div class="container">
+            <div class="profile">
+                <img src="zdjecie-moje.png" alt="Patryk Tecza" class="profile-image">
+                <h1 class="name">Patryk Tecza</h1>
+                <p class="bio">Hi, I'm Patryk. I specialize in web development using Python and Django. Below are some of my projects!</p>
+            </div>
         </div>
     </header>
 
     <!-- Projects Section -->
     <section class="projects">
-        <h2>Projects</h2>
-        
-        <div class="project-card">
-            <h3>To-Do List</h3>
-            <p><strong>Technologies:</strong> Python, Django, PostgreSQL, HTML, CSS, JavaScript</p>
-            <a href="#todo" class="view-project">View Project</a>
-        </div>
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-cards">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <h3>To-Do List</h3>
+                        <p><strong>Technologies:</strong> Python, Django, PostgreSQL, HTML, CSS, JavaScript</p>
+                    </div>
+                    <p class="project-description">A web app to manage your tasks and to-dos. Built with Django and PostgreSQL, this app helps you stay organized and focused.</p>
+                    <a href="#todo" class="view-project">View Project</a>
+                </div>
 
-        <div class="project-card">
-            <h3>Employee Tracking System</h3>
-            <p><strong>Technologies:</strong> Python, Django, PostgreSQL, Bootstrap, Celery</p>
-            <a href="#employee-tracking" class="view-project">View Project</a>
-        </div>
-        
-        <!-- Placeholder for future projects -->
-        <div class="project-card placeholder">
-            <h3>More Projects Coming Soon!</h3>
-            <p>Stay tuned for more awesome projects I’m working on!</p>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <h3>Employee Tracking System</h3>
+                        <p><strong>Technologies:</strong> Python, Django, PostgreSQL, Bootstrap, Celery</p>
+                    </div>
+                    <p class="project-description">This system helps businesses track employee hours and performance. Built with Django and PostgreSQL, it includes task management features.</p>
+                    <a href="#employee-tracking" class="view-project">View Project</a>
+                </div>
+
+                <!-- Placeholder for more projects -->
+                <div class="project-card placeholder">
+                    <h3>More Projects Coming Soon!</h3>
+                    <p>Check back later for more exciting projects I'm working on!</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <p>Created by Patryk Tecza</p>
     </footer>
 
