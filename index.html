@@ -8,63 +8,40 @@
 </head>
 <body>
 
-    <!-- Header with your name and introduction -->
-    <header class="header">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="python-apps.html">Python Apps</a></li>
+            <li><a href="terraform-projects.html">Terraform Projects</a></li>
+            <li><a href="go-projects.html">Go Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Home Section -->
+    <section id="home" class="home">
         <div class="container">
             <h1 class="name">Patryk Tecza</h1>
             <p class="greeting">Good evening, I'm Patryk Tecza, and these are my projects.</p>
-        </div>
-    </header>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            
-            <div class="project-cards">
-                <!-- Project 1 -->
-                <div class="project-card fade-in">
-                    <div class="project-card-header">
-                        <h3>To-Do List</h3>
-                        <p><strong>Technologies:</strong> Python, Django, PostgreSQL, HTML, CSS, JavaScript</p>
-                    </div>
-                    <p class="project-description">A web app to manage your tasks and to-dos. Built with Django and PostgreSQL, this app helps you stay organized and focused.</p>
-                    <button class="view-project" onclick="openModal({description: 'A full-stack To-Do list app built with Python, Django, and PostgreSQL.', link: 'https://example.com'})">View Project</button>
-                </div>
+            <div class="profile-picture">
+                <img src="zdjecie-moje.png" alt="Patryk Tecza">
+            </div>
 
-                <!-- Project 2 -->
-                <div class="project-card fade-in">
-                    <div class="project-card-header">
-                        <h3>Employee Tracking System</h3>
-                        <p><strong>Technologies:</strong> Python, Django, PostgreSQL, Bootstrap, Celery</p>
-                    </div>
-                    <p class="project-description">This system helps businesses track employee hours and performance. Built with Django and PostgreSQL, it includes task management features.</p>
-                    <button class="view-project" onclick="openModal({description: 'An employee tracking system built with Python and Django.', link: 'https://example.com'})">View Project</button>
-                </div>
-
-                <!-- Placeholder for more projects -->
-                <div class="project-card placeholder fade-in">
-                    <h3>More Projects Coming Soon!</h3>
-                    <p>Check back later for more exciting projects I'm working on!</p>
-                </div>
+            <div class="categories">
+                <h2>Project Categories</h2>
+                <ul>
+                    <li><a href="python-apps.html">Python Apps</a></li>
+                    <li><a href="terraform-projects.html">Terraform Projects</a></li>
+                    <li><a href="go-projects.html">Go Projects</a></li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>Created by Patryk Tecza</p>
     </footer>
-
-    <!-- Modal for Project Details -->
-    <div class="modal" id="project-modal">
-        <div class="modal-content">
-            <span class="close-button" onclick="closeModal()">&times;</span>
-            <h3>Project Details</h3>
-            <p id="modal-description"></p>
-            <a id="modal-link" href="" target="_blank">View Full Project</a>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>

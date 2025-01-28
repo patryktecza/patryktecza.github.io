@@ -1,19 +1,19 @@
-// Function to open the modal and show project details
-function openModal(projectDetails) {
-    const modal = document.getElementById("project-modal");
-    const modalDescription = document.getElementById("modal-description");
-    const modalLink = document.getElementById("modal-link");
+// // Function to open the modal and show project details
+// function openModal(projectDetails) {
+//     const modal = document.getElementById("project-modal");
+//     const modalDescription = document.getElementById("modal-description");
+//     const modalLink = document.getElementById("modal-link");
 
-    modal.style.display = "block";
-    modalDescription.innerHTML = projectDetails.description;
-    modalLink.href = projectDetails.link;
-}
+//     modal.style.display = "block";
+//     modalDescription.innerHTML = projectDetails.description;
+//     modalLink.href = projectDetails.link;
+// }
 
-// Function to close the modal
-function closeModal() {
-    const modal = document.getElementById("project-modal");
-    modal.style.display = "none";
-}
+// // Function to close the modal
+// function closeModal() {
+//     const modal = document.getElementById("project-modal");
+//     modal.style.display = "none";
+// }
 
 // Adding scroll animations when elements are in the viewport
 window.addEventListener("scroll", function() {
