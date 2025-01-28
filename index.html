@@ -7,31 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to my website!</h1>
-        <p>I'm Patryk Tecza, and these are my projects.</p>
-    </header>
-    
-    <!-- Profile Section -->
-    <section class="profile-section">
-        <img src="zdjecie-moje.png" alt="Patryk Tecza" class="profile-image">
-        <p class="bio">Hi, I'm Patryk. I specialize in web development, focusing on Python and Django projects. Below are some of my notable projects.</p>
-    </section>
 
-    <!-- Python Projects Section -->
+    <!-- Header with your picture and description -->
+    <header class="header">
+        <div class="profile">
+            <img src="zdjecie-moje.png" alt="Patryk Tecza" class="profile-image">
+            <p class="bio">Hi, I'm Patryk Tecza. I'm a web developer specializing in Python and Django. Below are some of my projects!</p>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
     <section class="projects">
-        <h2>Python Projects</h2>
+        <h2>Projects</h2>
         
         <div class="project-card">
             <h3>To-Do List</h3>
             <p><strong>Technologies:</strong> Python, Django, PostgreSQL, HTML, CSS, JavaScript</p>
-            <a href="#todo-list">View Project</a>
+            <a href="#todo" class="view-project">View Project</a>
         </div>
 
         <div class="project-card">
             <h3>Employee Tracking System</h3>
             <p><strong>Technologies:</strong> Python, Django, PostgreSQL, Bootstrap, Celery</p>
-            <a href="#employee-tracking">View Project</a>
+            <a href="#employee-tracking" class="view-project">View Project</a>
+        </div>
+        
+        <!-- Placeholder for future projects -->
+        <div class="project-card placeholder">
+            <h3>More Projects Coming Soon!</h3>
+            <p>Stay tuned for more awesome projects I’m working on!</p>
         </div>
     </section>
 
