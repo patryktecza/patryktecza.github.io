@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Go Projects - Patryk Tecza</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .project-card {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            text-align: center; /* Center text */
+            margin: 20px auto; /* Center the card itself */
+            max-width: 600px; /* Optional: Control the width of the card */
+        }
+    </style>
 </head>
 <body>
 
@@ -21,8 +30,12 @@
     <!-- Go Projects Section -->
     <section id="go-projects" class="projects-section">
         <h2>Go Projects</h2>
-        <div class="project-cards">
-            <p>No Go projects yet. Check back soon!</p>
+        <div class="project-card">
+            <a href="https://github.com/patryktecza/go-web-app" class="project-link" target="_blank">
+                <h3>Go Web App</h3>
+                <p><strong>Technologies:</strong> Go, SQLite, Docker, HTML</p>
+                <p>Go Web App is a cloud-based note-taking web application built with Go, SQLite, and Docker, allowing users to add and view notes via a simple web interface.</p>
+            </a>
         </div>
 
         <!-- Back to Home Button -->
